@@ -3,6 +3,7 @@ import { StyleSheet, View } from "react-native";
 import FlatListBasics from "./FlatListBasics";
 import PizzaTranslator from "./PizzaTranslator";
 import ScrollViewPart from "./ScrollViewPage";
+import SectionListBasics from "./SectionListBasics";
 
 export default function App() {
   return (
@@ -10,7 +11,8 @@ export default function App() {
       {/* <PizzaTranslator /> */}
       {/* <ScrollViewPart /> */}
 
-      <FlatListBasics />
+      {/* <FlatListBasics /> */}
+      <SectionListBasics />
     </View>
   );
 }
