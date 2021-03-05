@@ -1,13 +1,16 @@
 import React from "react";
-import { StyleSheet,View} from "react-native";
-import PizzaTranslator from './PizzaTranslator';
-import ScrollViewPart from './ScrollViewPage';
+import { StyleSheet, View } from "react-native";
+import FlatListBasics from "./FlatListBasics";
+import PizzaTranslator from "./PizzaTranslator";
+import ScrollViewPart from "./ScrollViewPage";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <PizzaTranslator />
-      <ScrollViewPart />
+      {/* <PizzaTranslator /> */}
+      {/* <ScrollViewPart /> */}
+
+      <FlatListBasics />
     </View>
   );
 }
@@ -20,4 +23,3 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
-
