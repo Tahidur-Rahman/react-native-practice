@@ -1,5 +1,7 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import {  StyleSheet, View } from "react-native";
+import ActivityIndicatorPart from "./ActivityIndicator";
+import Buttons from "./Buttons";
 import FlatListBasics from "./FlatListBasics";
 import PizzaTranslator from "./PizzaTranslator";
 import ScrollViewPart from "./ScrollViewPage";
@@ -10,9 +12,14 @@ export default function App() {
     <View style={styles.container}>
       {/* <PizzaTranslator /> */}
       {/* <ScrollViewPart /> */}
-
       {/* <FlatListBasics /> */}
-      <SectionListBasics />
+      {/* <SectionListBasics /> */}
+
+    {/* BuiltInComponents */}
+
+    {/* <ActivityIndicatorPart /> */}
+    <Buttons />
+
     </View>
   );
 }
