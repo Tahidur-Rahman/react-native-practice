@@ -3,6 +3,7 @@ import {  StyleSheet, View } from "react-native";
 import ActivityIndicatorPart from "./ActivityIndicator";
 import Buttons from "./Buttons";
 import FlatListBasics from "./FlatListBasics";
+import Images from "./Images";
 import PizzaTranslator from "./PizzaTranslator";
 import ScrollViewPart from "./ScrollViewPage";
 import SectionListBasics from "./SectionListBasics";
@@ -12,14 +13,14 @@ export default function App() {
     <View style={styles.container}>
       {/* <PizzaTranslator /> */}
       {/* <ScrollViewPart /> */}
-      {/* <FlatListBasics /> */}
       {/* <SectionListBasics /> */}
 
     {/* BuiltInComponents */}
 
     {/* <ActivityIndicatorPart /> */}
-    <Buttons />
-
+    {/* <Buttons /> */}
+      {/* <FlatListBasics /> */}
+    <Images/>
     </View>
   );
 }
