@@ -1,48 +1,37 @@
 import React from "react";
-import { ScrollView, Image, Text } from "react-native";
+import { ScrollView, Text,StyleSheet,SafeAreaView,StatusBar } from "react-native";
 
-const logo = {
-  uri: "https://reactnative.dev/img/tiny_logo.png",
-  width: 64,
-  height: 64,
-};
+
 
 function ScrollViewPart() {
+  console.log(StatusBar);
   return (
-    <ScrollView>
-      <Text style={{ fontSize: 96 }}>Scroll me plz</Text>
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Text style={{ fontSize: 96 }}>If you like</Text>
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Text style={{ fontSize: 96 }}>Scrolling down</Text>
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Text style={{ fontSize: 96 }}>What's the best</Text>
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Text style={{ fontSize: 96 }}>Framework around?</Text>
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Text style={{ fontSize: 80 }}>React Native</Text>
-    </ScrollView>
+    <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.scrollView}
+      bounces={true}>
+        <Text style={styles.text}>
+          
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum corrupti molestiae quo dolorum tenetur dolore. Magni, nisi! Doloremque, consectetur saepe, ipsa odit id nihil, in fugit nobis corporis assumenda quia facilis reiciendis quibusdam aspernatur aut. Consectetur sequi laudantium distinctio fugiat inventore, voluptates quod facere maiores officia, illo aliquam autem aliquid molestias libero beatae doloremque nemo amet numquam at voluptatem. Maiores, odit modi blanditiis cum accusantium sed placeat beatae velit eos at vitae omnis corrupti, commodi illo praesentium libero molestiae dolores et quisquam vero. Sapiente laborum excepturi nostrum deserunt nam nemo porro illum labore? Suscipit soluta quae nesciunt blanditiis eaque?
+        </Text>
+      </ScrollView>
+     
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  container:{
+    flex:1,
+    paddingTop:StatusBar.currentHeight,
+  },
+  scrollView:{
+    backgroundColor:'pink',
+    marginHorizontal:20,
+    padding:10,
+  },text:{
+    fontSize:32,
+    textAlign:'justify',
+  }
+})
 
 export default ScrollViewPart;
