@@ -7,6 +7,7 @@ import Images from "./Images";
 import KeyboardAvoidingViews from "./KeyboardAvoidingViews";
 import Modals from "./Modals";
 import PizzaTranslator from "./PizzaTranslator";
+import PullToRefresh from "./PullToRefresh";
 import ScrollViewPart from "./ScrollViewPage";
 import SectionListBasics from "./SectionListBasics";
 
@@ -21,10 +22,13 @@ export default function App() {
 
     {/* <ActivityIndicatorPart /> */}
     {/* <Buttons /> */}
-      {/* <FlatListBasics /> */}
+    {/* <FlatListBasics /> */}
     {/* <Images/> */}
     {/* <KeyboardAvoidingViews /> */}
-    <Modals/>
+    {/* <Modals/> */}
+
+<PullToRefresh />
+
     </View>
   );
 }
