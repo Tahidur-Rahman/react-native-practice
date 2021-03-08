@@ -11,6 +11,7 @@ import PullToRefresh from "./PullToRefresh";
 import ScrollViewPart from "./ScrollViewPage";
 import SectionListBasics from "./SectionListBasics";
 import StatusBarPart from "./StatusBarPart";
+import Switches from "./Switches";
 
 export default function App() {
   return (
@@ -29,8 +30,9 @@ export default function App() {
     {/* <ScrollViewPart /> */}
 
       {/* <SectionListBasics /> */}
+      {/* <StatusBarPart /> */}
+      <Switches/>
 
-<StatusBarPart />
     </View>
   );
 }
