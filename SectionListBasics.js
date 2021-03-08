@@ -1,41 +1,70 @@
 import React from "react";
-import { SectionList, View, Text,StyleSheet } from "react-native";
+import {
+  SectionList,
+  View,
+  Text,
+  StyleSheet,
+  SafeAreaView,
+  StatusBar,
+} from "react-native";
+
+const DATA = [
+  {
+    title: "Main dishes",
+    data: ["Pizza", "Burger", "Risotto"],
+  },
+  {
+    title: "Sides",
+    data: ["French Fries", "Onion Rings", "Fried Shrimps"],
+  },
+  {
+    title: "Drinks",
+    data: ["Water", "Coke", "Beer"],
+  },
+  {
+    title: "Desserts",
+    data: ["Cheese Cake", "Ice Cream"],
+  },
+];
+
+const Item = ({ title }) => (
+  <View style={styles.item}>
+    <Text style={styles.title}>{title}</Text>
+  </View>
+);
+function SectionListBasics() {
+  return (
+    <SafeAreaView style={styles.item}>
+      <SectionList
+        sections={DATA}
+        keyExtractor={(item, index) => index}
+        renderItem={({ item }) => <Item title={item} />}
+        renderSectionHeader={({ section: { title } }) => (
+          <Text style={styles.header}>{title}</Text>
+        )}
+      />
+    </SafeAreaView>
+  );
+}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 22,
-  },
-  sectionHeader: {
-    paddingTop: 2,
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingBottom: 2,
-    fontSize: 34,
-    fontWeight: 'bold',
-    backgroundColor: 'rgba(247,247,247,1.0)',
+    paddingTop: StatusBar.currentHeight,
+    marginHorizontal: 16
   },
   item: {
-    padding: 10,
-    fontSize: 18,
-    height: 44,
+    backgroundColor: "#f9c2ff",
+    padding: 20,
+    marginVertical: 8
+  },
+  header: {
+    fontSize: 32,
+    backgroundColor: "#fff"
+  },
+  title: {
+    fontSize: 24
   }
-})
-
-function SectionListBasics() {
-  return (
-    <View style={styles.container}>
-      <SectionList
-        sections={[
-          {title:'Brothers',data:['Habib','Aziz',"Tohid","Sahid"]},
-          {title:'Profession',data:['Banker','Banker',"Student","Student"]},
-        ]}
-        renderSectionHeader={({section})=> <Text style={styles.sectionHeader}>{section.title}</Text>}
-        renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
-        keyExtractor={(item,index)=>index}
-      />
-    </View>
-  );
-}
+});
 
 export default SectionListBasics;

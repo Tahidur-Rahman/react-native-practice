@@ -15,7 +15,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       {/* <PizzaTranslator /> */}
-      {/* <SectionListBasics /> */}
 
     {/* BuiltInComponents */}
 
@@ -26,8 +25,9 @@ export default function App() {
     {/* <KeyboardAvoidingViews /> */}
     {/* <Modals/> */}
     {/* <PullToRefresh /> */}
-    <ScrollViewPart />
+    {/* <ScrollViewPart /> */}
 
+      <SectionListBasics />
 
     </View>
   );
