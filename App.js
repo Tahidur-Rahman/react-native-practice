@@ -1,5 +1,5 @@
 import React from "react";
-import {  StyleSheet, TextInput, View } from "react-native";
+import {  StyleSheet, TextInput, TouchableHighlight, View } from "react-native";
 import ActivityIndicatorPart from "./ActivityIndicator";
 import Buttons from "./Buttons";
 import FlatListBasics from "./FlatListBasics";
@@ -14,6 +14,7 @@ import StatusBarPart from "./StatusBarPart";
 import Switches from "./Switches";
 import TextInputs from "./TextInputs";
 import Texts from "./Texts";
+import TouchableHighlightExample from "./TouchableHightLights";
 
 export default function App() {
   return (
@@ -35,7 +36,8 @@ export default function App() {
       {/* <StatusBarPart /> */}
       {/* <Switches/> */}
       {/* <Texts/> */}
-      <TextInputs/>
+      {/* <TextInputs/> */}
+      <TouchableHighlightExample />
     </View>
   );
 }
