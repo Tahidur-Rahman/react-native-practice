@@ -10,6 +10,7 @@ import PizzaTranslator from "./PizzaTranslator";
 import PullToRefresh from "./PullToRefresh";
 import ScrollViewPart from "./ScrollViewPage";
 import SectionListBasics from "./SectionListBasics";
+import StatusBarPart from "./StatusBarPart";
 
 export default function App() {
   return (
@@ -27,8 +28,9 @@ export default function App() {
     {/* <PullToRefresh /> */}
     {/* <ScrollViewPart /> */}
 
-      <SectionListBasics />
+      {/* <SectionListBasics /> */}
 
+<StatusBarPart />
     </View>
   );
 }
