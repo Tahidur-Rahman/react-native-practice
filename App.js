@@ -1,5 +1,5 @@
 import React from "react";
-import {  StyleSheet, View } from "react-native";
+import {  StyleSheet, TextInput, View } from "react-native";
 import ActivityIndicatorPart from "./ActivityIndicator";
 import Buttons from "./Buttons";
 import FlatListBasics from "./FlatListBasics";
@@ -12,6 +12,8 @@ import ScrollViewPart from "./ScrollViewPage";
 import SectionListBasics from "./SectionListBasics";
 import StatusBarPart from "./StatusBarPart";
 import Switches from "./Switches";
+import TextInputs from "./TextInputs";
+import Texts from "./Texts";
 
 export default function App() {
   return (
@@ -31,8 +33,9 @@ export default function App() {
 
       {/* <SectionListBasics /> */}
       {/* <StatusBarPart /> */}
-      <Switches/>
-
+      {/* <Switches/> */}
+      {/* <Texts/> */}
+      <TextInputs/>
     </View>
   );
 }
